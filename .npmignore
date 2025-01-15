@@ -1,0 +1,29 @@
+# Source
+src/
+
+# Tests
+tests/
+coverage/
+jest.config.js
+
+# TypeScript config
+tsconfig.json
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.* 

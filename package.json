@@ -1,0 +1,53 @@
+{
+  "name": "azure-sql-ai-assistant",
+  "version": "1.0.0",
+  "description": "AI-powered assistant for Azure SQL Database that combines schema inspection, natural language queries, and intelligent result formatting",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KolyaSotnichenko/azure-sql-ai-assistant.git"
+  },
+  "keywords": [
+    "azure",
+    "sql",
+    "database",
+    "ai",
+    "openai",
+    "gpt",
+    "natural-language",
+    "query-generator",
+    "schema-analyzer",
+    "assistant"
+  ],
+  "author": {
+    "name": "Mykola Sotnichenko",
+    "email": "kolya.sotnichenko0811@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KolyaSotnichenko/azure-sql-ai-assistant/issues"
+  },
+  "homepage": "https://github.com/KolyaSotnichenko/azure-sql-ai-assistant#readme",
+  "dependencies": {
+    "mssql": "^9.1.1",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/mssql": "^8.1.2",
+    "@types/node": "^18.0.0",
+    "typescript": "^4.9.5"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
