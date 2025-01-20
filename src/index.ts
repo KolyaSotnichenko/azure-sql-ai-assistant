@@ -6,6 +6,8 @@ export interface SQLQueryResult {
   [key: string]: any;
 }
 
+type Language = "english" | "ukrainian";
+
 interface ColumnMetadata {
   COLUMN_NAME: string;
   DATA_TYPE: string;
@@ -22,7 +24,7 @@ interface TableMetadata {
 interface AIClientConfig {
   client: AzureOpenAI | OpenAI;
   model: string;
-  language?: string;
+  language?: Language;
 }
 
 // Main classes
@@ -331,6 +333,8 @@ export class SQLAnalyzer {
 
       // Виконуємо згенерований запит
       const results = await this.inspector.executeQuery(query);
+
+      console.log("SQL Results: ", results);
 
       // Форматуємо результати у природню мову
       return await this.assistant.formatResponse(query, results);

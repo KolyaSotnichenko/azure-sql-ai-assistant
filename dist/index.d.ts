@@ -3,10 +3,11 @@ import { AzureOpenAI, OpenAI } from "openai";
 export interface SQLQueryResult {
     [key: string]: any;
 }
+type Language = "english" | "ukrainian";
 interface AIClientConfig {
     client: AzureOpenAI | OpenAI;
     model: string;
-    language?: string;
+    language?: Language;
 }
 export declare class SQLSchemaInspector {
     private pool;

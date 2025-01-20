@@ -13,7 +13,7 @@ AI-powered асистент для роботи з Azure SQL Database, який 
 ## Встановлення
 
 ```bash
-npm install azure-sql-ai-assistant openai
+npm install azure-sql-ai-assistant
 ```
 
 ## Компоненти
@@ -60,8 +60,8 @@ import { OpenAI } from "openai";
 
 const assistant = new SQLQueryAssistant({
   client: new OpenAI({ apiKey: "your-api-key" }),
-  model: "gpt-4",
-  language: "ukrainian", // підтримка різних мов
+  model: "your model",
+  language: "ukrainian", // "english" | "ukrainian"
 });
 
 // Генерація SQL запиту з природномовного запитання
